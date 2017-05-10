@@ -15,19 +15,19 @@ public class secretaria extends Pessoa {
         super(nome, endereco, cidade, telefone);
     }
     
-    protected String codigoFuncionario;
+    protected String codigoSecretaria;
 
     public secretaria(String codigoFuncionario, String nome, String endereco, String cidade, int telefone) {
         super(nome, endereco, cidade, telefone);
-        this.codigoFuncionario = codigoFuncionario;
+        this.codigoSecretaria = codigoSecretaria;
     }
 
-    public String getCodigoFuncionario() {
-        return codigoFuncionario;
+    public String getCodigoSecretaria() {
+        return codigoSecretaria;
     }
 
-    public void setCodigoFuncionario(String codigoFuncionario) {
-        this.codigoFuncionario = codigoFuncionario;
+    public void setCodigoSecretaria(String codigoSecretaria) {
+        this.codigoSecretaria = codigoSecretaria;
     }
     
     public void cadastrarCliente(){
@@ -35,5 +35,9 @@ public class secretaria extends Pessoa {
     }
     public void efetuarAgendamento(){
         
+    }
+    @Override
+    public String toString(){
+        return super.toString() + "especialidade: "+codigoSecretaria;
     }
 }

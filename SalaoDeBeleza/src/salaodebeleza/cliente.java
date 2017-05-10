@@ -49,5 +49,10 @@ public class cliente extends Pessoa {
     public void setCodigoCliente(int codigoCliente) {
         this.codigoCliente = codigoCliente;
     }
+    @Override
+    public String toString(){
+        return super.toString() + "documento: "+Documento+ "email " + Email + "codigo do cliente"+ codigoCliente;
+        
+    }
 
 }

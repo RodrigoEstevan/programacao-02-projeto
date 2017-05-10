@@ -14,6 +14,7 @@ public abstract class Pessoa {
     protected String endereco;
     protected  String cidade;
     protected int telefone;
+    
 
     public Pessoa(String nome, String endereco, String cidade, int telefone) {
         this.nome = nome;

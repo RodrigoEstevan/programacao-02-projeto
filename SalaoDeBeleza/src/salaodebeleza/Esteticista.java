@@ -15,12 +15,12 @@ public class Esteticista extends Pessoa{
         super(nome, endereco, cidade, telefone);
     }
     protected String especialidade;
-    protected  String codigoFuncionario;
+    protected  String codigoEsteticista;
 
     public Esteticista(String especialidade, String codigoFuncionario, String nome, String endereco, String cidade, int telefone) {
         super(nome, endereco, cidade, telefone);
         this.especialidade = especialidade;
-        this.codigoFuncionario = codigoFuncionario;
+        this.codigoEsteticista = codigoEsteticista;
     }
 
     public String getEspecialidade() {
@@ -31,12 +31,12 @@ public class Esteticista extends Pessoa{
         this.especialidade = especialidade;
     }
 
-    public String getCodigoFuncionario() {
-        return codigoFuncionario;
+    public String getCodigoEsteticista() {
+        return codigoEsteticista;
     }
 
-    public void setCodigoFuncionario(String codigoFuncionario) {
-        this.codigoFuncionario = codigoFuncionario;
+    public void setCodigoEsteticista(String codigoEsteticista) {
+        this.codigoEsteticista= codigoEsteticista;
     }
     
     public void efetuarTratamento(){
@@ -47,7 +47,7 @@ public class Esteticista extends Pessoa{
     }
     @Override
     public String toString(){
-        return super.toString() + "especialidade: "+especialidade+ "codigo do funcionario " +codigoFuncionario;
+        return super.toString() + "especialidade: "+especialidade+ "codigo do funcionario " +codigoEsteticista;
     }
     
 }
