@@ -39,7 +39,10 @@ public class Esteticista extends Pessoa{
         this.codigoFuncionario = codigoFuncionario;
     }
     
-    public efetuarTratamento(){
+    public void efetuarTratamento(){
+        
+        
+        
         
     }
     
