@@ -41,9 +41,13 @@ public class Esteticista extends Pessoa{
     
     public void efetuarTratamento(){
         
+      
         
         
-        
+    }
+    @Override
+    public String toString(){
+        return super.toString() + "especialidade: "+especialidade+ "codigo do funcionario " +codigoFuncionario;
     }
     
 }
