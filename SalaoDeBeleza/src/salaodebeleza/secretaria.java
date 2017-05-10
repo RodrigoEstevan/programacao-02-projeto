@@ -30,8 +30,10 @@ public class secretaria extends Pessoa {
         this.codigoFuncionario = codigoFuncionario;
     }
     
-    
-    
-    
-    
+    public void cadastrarCliente(){
+        
+    }
+    public void efetuarAgendamento(){
+        
+    }
 }
