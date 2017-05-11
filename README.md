@@ -3,8 +3,8 @@
 
 ### Integrantes:
 
-##Rodrigo Estevan Nyari Vergara 31623913 3°f
-##John Lennon Cavalcante de Sousa 31324673 3°f
+<h1>Rodrigo Estevan Nyari Vergara 31623913 3°f</h1>
+<h1>John Lennon Cavalcante de Sousa 31324673 3°f</h1>
 
 
 SISTEMA DE AGENDAMENTO EM SALÃO DE BELEZA:
