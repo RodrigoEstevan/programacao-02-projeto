@@ -4,6 +4,7 @@
 ### Integrantes:
 
 Rodrigo Estevan Nyari Vergara 31623913 3°f
+John Lennon Cavalcante de Sousa 31324673 3°f
 
 
 SISTEMA DE AGENDAMENTO EM SALÃO DE BELEZA:
@@ -23,3 +24,22 @@ por muitas sessões, dependendo do tipo de tratamento estético solicitado;
 
 •	É responsabilidade da recepcionista manter atualizados os cadastrados dos clientes e dos
 tratamentos.
+
+•	O sistema deve permitir a inclusão, alteração e remoção dos tratamentos estéticos, 
+com os seguintes atributos:  código do tratamento, nome do tratamento, produtos utilizados 
+no tratamento e descrição do tratamento (opcional). 
+
+•	O sistema deve permitir a inclusão, alteração e remoção de clientes, com os seguintes 
+atributos: código, nome, endereço, cidade, estado, telefone residencial, telefone celular, 
+documento, e-mail. 
+ 
+•	O sistema deve permitir a inclusão, alteração e remoção de esteticistas da Fictício MEI, 
+com os seguintes atributos: nome, endereço, cidade, estado, telefone residencial, telefone 
+celular e especialidade.
+
+•	O sistema deve permitir o processamento do tratamento estético de um cliente, com os 
+seguintes atributos: data e hora do tratamento, identificação do cliente (previamente cadastrado), 
+identificação do esteticista que efetuou o tratamento estético (previamente cadastrado), observações
+pertinentes ao tratamento (opcional), identificação dos tratamentos estéticos executados (previamente 
+cadastrados), valor e forma de pagamento.
+
