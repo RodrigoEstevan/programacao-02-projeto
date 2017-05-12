@@ -14,6 +14,7 @@ import java.util.Date;
  * @author 31623913
  */
 public class DataAgendamento extends agendamento{
+    
     protected Date Data;
     protected Time Hora;
 
@@ -40,7 +41,6 @@ public class DataAgendamento extends agendamento{
         this.Hora = Hora;
     }
     
-   
     Date Data = new Date();
     SimpleDateFormat formatar = new SimpleDateFormat("y");
     protected String DataFormatada = formatar.format(Data);
