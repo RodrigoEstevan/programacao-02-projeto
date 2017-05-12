@@ -5,26 +5,27 @@
  */
 package salaodebeleza;
 
-import java.util.Date;
+import java.sql.Time;
 
 /**
  *
  * @author 31623913
  */
-public class DataAgendamento extends agendamento {
-    protected Date Data;
+public class HoraAgendamento extends agendamento {
+    protected Time Hora;
 
-    public DataAgendamento(Date Data, Double Valor, String formaDePagamento) {
+    public HoraAgendamento(Time Hora, Double Valor, String formaDePagamento) {
         super(Valor, formaDePagamento);
-        this.Data = Data;
+        this.Hora = Hora;
     }
 
-    public Date getData() {
-        return Data;
+    public Time getHora() {
+        return Hora;
     }
 
-    public void setData(Date Data) {
-        this.Data = Data;
+    public void setHora(Time Hora) {
+        this.Hora = Hora;
     }
+    
     
 }
