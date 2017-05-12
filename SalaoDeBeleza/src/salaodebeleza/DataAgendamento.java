@@ -5,6 +5,7 @@
  */
 package salaodebeleza;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -26,5 +27,9 @@ public class DataAgendamento extends agendamento {
     public void setData(Date Data) {
         this.Data = Data;
     }
+    
+    Date DataAgendamento = new Date();
+    SimpleDateFormat formatar = new SimpleDateFormat("d");
+    protected String DataFormatada = formatar.format(DataAgendamento);
     
 }

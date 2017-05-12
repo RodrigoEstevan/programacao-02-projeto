@@ -27,5 +27,5 @@ public class HoraAgendamento extends agendamento {
         this.Hora = Hora;
     }
     
-    
+ 
 }
