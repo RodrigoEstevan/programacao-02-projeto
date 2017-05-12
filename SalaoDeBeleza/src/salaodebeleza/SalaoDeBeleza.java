@@ -15,18 +15,9 @@ import java.util.Scanner;
  * @author 41646843
  */
 public class SalaoDeBeleza {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-      Scanner ler = new Scanner(System.in);
-   
-   
-   
-   
-   
-    System.out.printf("Informe o nome de arquivo texto:\n");
+    public void lerArquivoPessoa(){
+        Scanner ler = new Scanner(System.in);
+        System.out.printf("Informe o nome de arquivo texto:\n");
     String nome = ler.nextLine();
  
     System.out.printf("\nConteúdo do arquivo texto:\n");
@@ -37,7 +28,6 @@ public class SalaoDeBeleza {
       String linha = lerArq.readLine(); 
       while (linha != null) {
         System.out.printf("%s\n", linha);
-        System.out.println("\n");
  
         linha = lerArq.readLine(); 
       }
@@ -49,9 +39,95 @@ public class SalaoDeBeleza {
     }
  
     System.out.println();
-
-
+        
     }
     
+     public void lerArquivoCliente(){
+        Scanner ler = new Scanner(System.in);
+        System.out.printf("Informe o nome de arquivo texto:\n");
+    String nome = ler.nextLine();
+ 
+    System.out.printf("\nConteúdo do arquivo texto:\n");
+    try {
+      FileReader arq = new FileReader(nome);
+      BufferedReader lerArq = new BufferedReader(arq);
+ 
+      String linha = lerArq.readLine(); 
+      while (linha != null) {
+        System.out.printf("%s\n", linha);
+ 
+        linha = lerArq.readLine(); 
+      }
+ 
+      arq.close();
+    } catch (IOException e) {
+        System.err.printf("Erro na abertura do arquivo: %s.\n",
+          e.getMessage());
+    }
+ 
+    System.out.println();
+        
+    }
+      public void lerArquivoSecretaria(){
+        Scanner ler = new Scanner(System.in);
+        System.out.printf("Informe o nome de arquivo texto:\n");
+    String nome = ler.nextLine();
+ 
+    System.out.printf("\nConteúdo do arquivo texto:\n");
+    try {
+      FileReader arq = new FileReader(nome);
+      BufferedReader lerArq = new BufferedReader(arq);
+ 
+      String linha = lerArq.readLine(); 
+      while (linha != null) {
+        System.out.printf("%s\n", linha);
+ 
+        linha = lerArq.readLine(); 
+      }
+ 
+      arq.close();
+    } catch (IOException e) {
+        System.err.printf("Erro na abertura do arquivo: %s.\n",
+          e.getMessage());
+    }
+ 
+    System.out.println();
+        
+    }
+       public void lerArquivoEsteticista(){
+        Scanner ler = new Scanner(System.in);
+        System.out.printf("Informe o nome de arquivo texto:\n");
+    String nome = ler.nextLine();
+ 
+    System.out.printf("\nConteúdo do arquivo texto:\n");
+    try {
+      FileReader arq = new FileReader(nome);
+      BufferedReader lerArq = new BufferedReader(arq);
+ 
+      String linha = lerArq.readLine(); 
+      while (linha != null) {
+        System.out.printf("%s\n", linha);
+ 
+        linha = lerArq.readLine(); 
+      }
+ 
+      arq.close();
+    } catch (IOException e) {
+        System.err.printf("Erro na abertura do arquivo: %s.\n",
+          e.getMessage());
+    }
+ 
+    System.out.println();
+        
+    }
+   
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+     
     
+    
+}
 }
