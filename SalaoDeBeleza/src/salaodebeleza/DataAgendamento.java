@@ -42,7 +42,7 @@ public class DataAgendamento extends agendamento{
     
    public static void main(String[] args){
        Date DataAgendamento = new Date();
-       SimpleDateFormat formatar = new SimpleDateFormat("dd/MM/yy -- kk:mm");
+       SimpleDateFormat formatar = new SimpleDateFormat("dd/MM/yyyy -- kk:mm");
        String DataFormatada = formatar.format(DataAgendamento);
        System.out.println("Data e hora do agendamento:");
        System.out.println (DataFormatada);
