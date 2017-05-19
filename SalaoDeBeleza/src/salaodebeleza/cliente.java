@@ -11,35 +11,35 @@ package salaodebeleza;
  */
 public class cliente extends Pessoa {
     
+    protected String documento;
+    protected String email;
+    protected int codigoCliente;
+    
     public cliente(String nome, String endereco, String cidade, int telefone) {
         super(nome, endereco, cidade, telefone);
     }
     
-    protected String Documento;
-    protected String Email;
-    protected int codigoCliente;
-
-    public cliente(String Documento, String Email, int codigoCliente, String nome, String endereco, String cidade, int telefone) {
+    public cliente(String documento, String email, int codigoCliente, String nome, String endereco, String cidade, int telefone) {
         super(nome, endereco, cidade, telefone);
-        this.Documento = Documento;
-        this.Email = Email;
+        this.documento = documento;
+        this.email = email;
         this.codigoCliente = codigoCliente;
     }
 
     public String getDocumento() {
-        return Documento;
+        return documento;
     }
 
-    public void setDocumento(String Documento) {
-        this.Documento = Documento;
+    public void setDocumento(String documento) {
+        this.documento = documento;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
-    public void setEmail(String Email) {
-        this.Email = Email;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public int getCodigoCliente() {
@@ -51,7 +51,7 @@ public class cliente extends Pessoa {
     }
     @Override
     public String toString(){
-        return super.toString() + "documento: "+Documento+ "email " + Email + "codigo do cliente"+ codigoCliente;
+        return super.toString() + "documento: "+documento+ "email " + email + "codigo do cliente"+ codigoCliente;
         
     }
 

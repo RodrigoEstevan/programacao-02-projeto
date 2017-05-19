@@ -10,13 +10,13 @@ package salaodebeleza;
  * @author 31623913
  */
 public class secretaria extends Pessoa {
+    
+    protected String codigoSecretaria;
 
     public secretaria(String nome, String endereco, String cidade, int telefone) {
         super(nome, endereco, cidade, telefone);
     }
     
-    protected String codigoSecretaria;
-
     public secretaria(String codigoFuncionario, String nome, String endereco, String cidade, int telefone) {
         super(nome, endereco, cidade, telefone);
         this.codigoSecretaria = codigoSecretaria;

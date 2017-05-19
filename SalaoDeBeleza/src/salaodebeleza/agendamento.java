@@ -10,20 +10,20 @@ package salaodebeleza;
  * @author 31623913
  */
 public class agendamento {
-    protected Double Valor;
+    protected Double valor;
     protected String formaDePagamento;
 
-    public agendamento(Double Valor, String formaDePagamento) {
-        this.Valor = Valor;
+    public agendamento(Double valor, String formaDePagamento) {
+        this.valor = valor;
         this.formaDePagamento = formaDePagamento;
     }
     
     public Double getValor() {
-        return Valor;
+        return valor;
     }
 
-    public void setValor(Double Valor) {
-        this.Valor = Valor;
+    public void setValor(Double valor) {
+        this.valor = valor;
     }
 
     public String getFormaDePagamento() {

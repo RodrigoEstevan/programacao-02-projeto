@@ -12,7 +12,7 @@ package salaodebeleza;
 public abstract class Pessoa {
     protected String nome;
     protected String endereco;
-    protected  String cidade;
+    protected String cidade;
     protected int telefone;
     
 

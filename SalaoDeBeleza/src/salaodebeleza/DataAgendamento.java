@@ -14,30 +14,30 @@ import java.util.Date;
  * @author 31623913
  */
 public class DataAgendamento extends agendamento{
-    protected Date Data;
-    protected Time Hora;
+    protected Date data;
+    protected Time hora;
 
-    public DataAgendamento(Date Data, Time Hora, Double Valor, String formaDePagamento) {
+    public DataAgendamento(Date data, Time hora, Double Valor, String formaDePagamento) {
         super(Valor, formaDePagamento);
-        this.Data = new Date();
-        this.Data = Data;
-        this.Hora = Hora;
+        this.data = new Date();
+        this.data = data;
+        this.hora = hora;
     }
 
     public Date getData() {
-        return Data;
+        return data;
     }
 
-    public void setData(Date Data) {
-        this.Data = Data;
+    public void setData(Date data) {
+        this.data = data;
     }
 
     public Time getHora() {
-        return Hora;
+        return hora;
     }
 
-    public void setHora(Time Hora) {
-        this.Hora = Hora;
+    public void setHora(Time hora) {
+        this.hora = hora;
     }
     
    public static void main(String[] args){
