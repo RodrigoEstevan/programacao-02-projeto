@@ -9,11 +9,11 @@ package salaodebeleza;
  *
  * @author 31623913
  */
-public class agendamento {
+public class Agendamento {
     protected Double valor;
     protected String formaDePagamento;
 
-    public agendamento(Double valor, String formaDePagamento) {
+    public Agendamento(Double valor, String formaDePagamento) {
         this.valor = valor;
         this.formaDePagamento = formaDePagamento;
     }

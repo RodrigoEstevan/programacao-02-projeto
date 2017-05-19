@@ -9,17 +9,17 @@ package salaodebeleza;
  *
  * @author 31623913
  */
-public class cliente extends Pessoa {
+public class Cliente extends Pessoa {
     
     protected String documento;
     protected String email;
     protected int codigoCliente;
     
-    public cliente(String nome, String endereco, String cidade, int telefone) {
+    public Cliente(String nome, String endereco, String cidade, int telefone) {
         super(nome, endereco, cidade, telefone);
     }
     
-    public cliente(String documento, String email, int codigoCliente, String nome, String endereco, String cidade, int telefone) {
+    public Cliente(String documento, String email, int codigoCliente, String nome, String endereco, String cidade, int telefone) {
         super(nome, endereco, cidade, telefone);
         this.documento = documento;
         this.email = email;

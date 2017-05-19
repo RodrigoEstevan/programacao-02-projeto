@@ -13,7 +13,7 @@ import java.util.Date;
  *
  * @author 31623913
  */
-public class DataAgendamento extends agendamento{
+public class DataAgendamento extends Agendamento{
     protected Date data;
     protected Time hora;
 
