@@ -4,35 +4,30 @@
  * and open the template in the editor.
  */
 package salaodebeleza;
+import java.util.ArrayList;
 
 /**
  *
  * @author 31623913
  */
-public class Cliente extends Pessoa {
-    
-    protected String documento;
+public class Cliente {
+    protected String nome;
+    protected String telefone;
     protected String email;
-    protected int codigoCliente;
+    protected String codigoCliente;
     
-    public Cliente(String nome, String endereco, String cidade, int telefone) {
-        super(nome, endereco, cidade, telefone);
-    }
+   
     
-    public Cliente(String documento, String email, int codigoCliente, String nome, String endereco, String cidade, int telefone) {
-        super(nome, endereco, cidade, telefone);
-        this.documento = documento;
+    public Cliente (String email, String codigoCliente, String nome, String telefone) {
+        
+        
         this.email = email;
         this.codigoCliente = codigoCliente;
+        this.nome = nome;
+        this.telefone = telefone;
     }
 
-    public String getDocumento() {
-        return documento;
-    }
-
-    public void setDocumento(String documento) {
-        this.documento = documento;
-    }
+  
 
     public String getEmail() {
         return email;
@@ -42,16 +37,38 @@ public class Cliente extends Pessoa {
         this.email = email;
     }
 
-    public int getCodigoCliente() {
+    public String getCodigoCliente() {
         return codigoCliente;
     }
 
-    public void setCodigoCliente(int codigoCliente) {
+    public void setCodigoCliente(String codigoCliente) {
         this.codigoCliente = codigoCliente;
+        
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+    
+    
     @Override
     public String toString(){
-        return super.toString() + "documento: "+documento+ "email " + email + "codigo do cliente"+ codigoCliente;
+        String resultado =  "email:\n"+email+ "\ncodigo do cliente:\n"+codigoCliente+
+                "\nNome do cliente:\n" +nome+"\ntelefone do cliente:\n" +telefone;
+        return resultado;
         
     }
 
