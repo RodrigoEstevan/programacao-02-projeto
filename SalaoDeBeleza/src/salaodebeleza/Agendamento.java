@@ -5,6 +5,10 @@
  */
 package salaodebeleza;
 
+import java.sql.Time;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  *
  * @author 31623913
@@ -12,12 +16,16 @@ package salaodebeleza;
 public class Agendamento {
     protected Double valor;
     protected String formaDePagamento;
+    protected Date data;
+    protected Time hora;
 
-    public Agendamento(Double valor, String formaDePagamento) {
+    public Agendamento(Double valor, String formaDePagamento, Date data, Time hora) {
         this.valor = valor;
         this.formaDePagamento = formaDePagamento;
+        this.data = data;
+        this.hora = hora;
     }
-    
+
     public Double getValor() {
         return valor;
     }
@@ -33,9 +41,30 @@ public class Agendamento {
     public void setFormaDePagamento(String formaDePagamento) {
         this.formaDePagamento = formaDePagamento;
     }
+
+    public Date getData() {
+        return data;
+    }
+
+    public void setData(Date data) {
+        this.data = data;
+    }
+
+    public Time getHora() {
+        return hora;
+    }
+
+    public void setHora(Time hora) {
+        this.hora = hora;
+    }
     
-    
-    
+    public static void main(String[] args){
+        Date DataAgendamento = new Date();
+        SimpleDateFormat formatar = new SimpleDateFormat("dd/MM/yyyy -- kk:mm");
+        String DataFormatada = formatar.format(DataAgendamento);
+        System.out.println("Data e hora do agendamento:");
+        System.out.println (DataFormatada);
+}
 
     
 }
