@@ -8,6 +8,7 @@ package salaodebeleza;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import static jdk.nashorn.tools.ShellFunctions.input;
 
 /**
  *
@@ -16,7 +17,7 @@ import java.util.Scanner;
 public class SalaoDeBeleza {
     public static void main(String[] args) {
          int opcao = 0;
-         int cod = 0;
+         String cod = "";
          Scanner dado = new Scanner (System.in);
          ArrayList<Cliente> clientes = new ArrayList<Cliente>();
          
@@ -40,16 +41,13 @@ public class SalaoDeBeleza {
                             switch(opcao){
                                     case 1:
                                         System.out.println("Digite o codigo do cliente:");
-                                        cod = dado.nextInt();
+                                        cod = dado.next();
                                         
                                         for(Cliente c : clientes){
-                                            //if(cod == this.CodigoCliente){
-                                               // System.out.println (c);
-                                                
-                                                
-                                            //}else {
-                                               // System.out.println("não existe cliente com esse codigo");
-                                           // }
+                                            if(cod.equals(c.getCodigoCliente())){
+                                               System.out.println (c);
+                                            
+                                            }
                                         }
                                     break;
                                         
