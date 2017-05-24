@@ -58,7 +58,7 @@ public class SalaoDeBeleza {
                                         
                                     default:
                                         System.out.println("numero invalido , tente novamente");
-                        
+                                        System.out.println("");
                                      }
                     
                 }while((opcao > 0)&&(opcao >3));
