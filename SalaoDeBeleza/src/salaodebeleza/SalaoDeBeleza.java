@@ -7,6 +7,7 @@ package salaodebeleza;
 
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 import static jdk.nashorn.tools.ShellFunctions.input;
 
@@ -18,8 +19,11 @@ public class SalaoDeBeleza {
     public static void main(String[] args) {
          int opcao = 0;
          String cod = "";
+         int cont = 0;
          Scanner dado = new Scanner (System.in);
+         
          ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+         
          
         
           Cliente cliente = new Cliente ("johnsousa07@gmail.com", "123", "john","123456789");
@@ -31,6 +35,8 @@ public class SalaoDeBeleza {
           clientes.add(cliente1);
           clientes.add(cliente2);
           clientes.add(cliente3);
+          
+          
          
           
                 do{
@@ -40,19 +46,25 @@ public class SalaoDeBeleza {
                   
                             switch(opcao){
                                     case 1:
+                                      
                                         System.out.println("Digite o codigo do cliente:");
                                         cod = dado.next();
                                         
                                         for(Cliente c : clientes){
                                             if(cod.equals(c.getCodigoCliente())){
                                                System.out.println (c);
-                                            
+                                               cont ++;
                                             }
+                                          
                                         }
+                                        if(cont == 0){
+                                            System.out.println("codigo invalido , tente novamente");
+                                          } 
                                     break;
                                         
                                     case 2:
-                                       //agendamento aqui. 
+                                      
+                                        
                                         
                                     break;
                                         

@@ -7,6 +7,7 @@ package salaodebeleza;
 
 import java.sql.Time;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -18,6 +19,7 @@ public class Agendamento {
     protected String formaDePagamento;
     protected Date data;
     protected Time hora;
+    ArrayList<Agendamento> agenda = new ArrayList<Agendamento>();
 
     public Agendamento(Double valor, String formaDePagamento, Date data, Time hora) {
         this.valor = valor;
