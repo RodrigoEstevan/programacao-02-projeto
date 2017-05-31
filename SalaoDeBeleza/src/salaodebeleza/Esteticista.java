@@ -36,6 +36,10 @@ public class Esteticista extends Tratamento {
         this.codigoFuncionario = codigoFuncionario;
     }
     
-    
+    @Override
+    public String toString(){
+        return super.toString() + "nome da esteticista: "+nomeEsteticista+
+                " codigo do funcionario" + codigoFuncionario;
+    }
     
 }

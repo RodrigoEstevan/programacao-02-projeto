@@ -54,6 +54,10 @@ public class SalaoDeBeleza {
           clientes.add(cliente1);
           clientes.add(cliente2);
           clientes.add(cliente3);
+          for(Cliente c : clientes){
+             System.out.println (c);
+             cont ++;
+                     }
           
           
           
