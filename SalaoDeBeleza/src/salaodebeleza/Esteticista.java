@@ -11,18 +11,28 @@ package salaodebeleza;
  */
 public class Esteticista extends Tratamento {
     
-    protected String codigoFuncionario;
+    protected String nomeEsteticista;
+    protected int codigoFuncionario;
 
-    public Esteticista(String codigoFuncionario, String tipoTratamento, int codigoProduto, String nomeProduto) {
+    public Esteticista(String nomeEsteticista, int codigoFuncionario, String tipoTratamento, int codigoProduto, String nomeProduto) {
         super(tipoTratamento, codigoProduto, nomeProduto);
+        this.nomeEsteticista = nomeEsteticista;
         this.codigoFuncionario = codigoFuncionario;
     }
 
-    public String getCodigoFuncionario() {
+    public String getNomeEsteticista() {
+        return nomeEsteticista;
+    }
+
+    public void setNomeEsteticista(String nomeEsteticista) {
+        this.nomeEsteticista = nomeEsteticista;
+    }
+
+    public int getCodigoFuncionario() {
         return codigoFuncionario;
     }
 
-    public void setCodigoFuncionario(String codigoFuncionario) {
+    public void setCodigoFuncionario(int codigoFuncionario) {
         this.codigoFuncionario = codigoFuncionario;
     }
     

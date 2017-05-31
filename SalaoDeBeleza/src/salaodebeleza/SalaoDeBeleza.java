@@ -36,10 +36,15 @@ public class SalaoDeBeleza {
          System.out.println (DataFormatada);
          
          ArrayList<Cliente> clientes = new ArrayList<Cliente>();
-        
+         ArrayList<Esteticista> esteticistas = new ArrayList<Esteticista>();
          
-         
+         Esteticista esteticita = new Esteticista ("tratamento de pele", 993, "creme hidratante", 881, "janaina");
+         Esteticista esteticita2 = new Esteticista ("tratamento capilar", 793, "creme capilar", 581, "rafaela");
         
+         esteticistas.add(esteticita);
+         esteticistas.add(esteticita2);
+         
+   
           Cliente cliente = new Cliente ("johnsousa07@gmail.com", "123", "john","123456789");
           Cliente cliente1 = new Cliente ("jrodrigo@gmail.com", "456", "rodrigo","987456123");
           Cliente cliente2 = new Cliente ("matheus@gmail.com", "485", "matheus","3652141");
