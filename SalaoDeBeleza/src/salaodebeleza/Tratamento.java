@@ -43,8 +43,10 @@ public class Tratamento {
     public void setNomeProduto(String nomeProduto) {
         this.nomeProduto = nomeProduto;
     }
-    
-    
-    
+    @Override
+    public String toString() {
+        return "Tipo de tratamento: "+tipoTratamento+" codigo do produto:" + codigoProduto+
+                " nome do produto"+ nomeProduto;
+    }
     
 }

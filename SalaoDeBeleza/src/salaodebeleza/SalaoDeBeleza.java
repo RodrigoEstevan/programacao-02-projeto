@@ -38,11 +38,11 @@ public class SalaoDeBeleza {
          ArrayList<Cliente> clientes = new ArrayList<Cliente>();
          ArrayList<Esteticista> esteticistas = new ArrayList<Esteticista>();
          
-         Esteticista esteticita = new Esteticista ("tratamento de pele", 993, "creme hidratante", 881, "janaina");
-         Esteticista esteticita2 = new Esteticista ("tratamento capilar", 793, "creme capilar", 581, "rafaela");
+          Esteticista esteticita = new Esteticista ("tratamento de pele", 993, "creme hidratante", 881, "janaina");
+          Esteticista esteticita2 = new Esteticista ("tratamento capilar", 793, "creme capilar", 581, "rafaela");
         
-         esteticistas.add(esteticita);
-         esteticistas.add(esteticita2);
+          esteticistas.add(esteticita);
+          esteticistas.add(esteticita2);
          
    
           Cliente cliente = new Cliente ("johnsousa07@gmail.com", "123", "john","123456789");
